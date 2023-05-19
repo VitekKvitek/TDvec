@@ -1,30 +1,220 @@
-[gd_scene load_steps=2 format=3 uid="uid://bocsqqnbyivgr"]
+[gd_scene load_steps=15 format=3 uid="uid://bocsqqnbyivgr"]
 
 [ext_resource type="Texture2D" uid="uid://cosne6es4ojek" path="res://Assets/Turrets/Corrupted_emerald_tower.png" id="1_bp8li"]
+[ext_resource type="Texture2D" uid="uid://bofhpeur52fq6" path="res://Assets/Turrets/Comet_laser_turret.png" id="2_q40l3"]
+[ext_resource type="Texture2D" uid="uid://dua40bvxt56yx" path="res://Assets/Turrets/Holy_tower_s.png" id="3_3tnpu"]
+[ext_resource type="Texture2D" uid="uid://clslln448ogaf" path="res://Assets/Turrets/Unholy_tower_s.png" id="4_1urtn"]
+[ext_resource type="Texture2D" uid="uid://chf5ay3b8j3uh" path="res://Assets/Units/King.png" id="5_7fv5a"]
+[ext_resource type="Texture2D" uid="uid://pynxb65klfdt" path="res://Assets/Turrets/Portal.png" id="6_5bkxo"]
+[ext_resource type="Texture2D" uid="uid://b2uxecpu4xgp2" path="res://Assets/Turrets/More_basic_tower_s.png" id="8_ecpty"]
+[ext_resource type="Texture2D" uid="uid://bnvgqxqpdcdeo" path="res://Assets/Turrets/CheckpointBlue.png" id="9_7f5re"]
+[ext_resource type="Texture2D" uid="uid://coxw0cfe1lcw" path="res://Assets/Turrets/CheckpointRed.png" id="10_ucu1y"]
+[ext_resource type="Texture2D" uid="uid://dllxxqwj8fh4t" path="res://Assets/Turrets/Nexus.png" id="11_ypnnk"]
+[ext_resource type="Texture2D" uid="uid://b0mjvawuv8cvl" path="res://Assets/Units/Mr_huge.png" id="12_bklrw"]
+[ext_resource type="Texture2D" uid="uid://cmwbvxwngsony" path="res://Assets/Units/Nuke_glider.png" id="13_3hg7s"]
+[ext_resource type="Texture2D" uid="uid://jwu4pdjr8nc3" path="res://Assets/Units/Parasyte.png" id="14_n85c6"]
+[ext_resource type="Texture2D" uid="uid://c3w62ln2yyvhr" path="res://Assets/Units/Mr_Boombastic.png" id="15_rhkvs"]
 
 [node name="Board" type="Node2D"]
 
 [node name="CorruptedEmeraldTower" type="Sprite2D" parent="."]
 texture_filter = 1
-position = Vector2(16, 16)
+position = Vector2(232, 176)
 texture = ExtResource("1_bp8li")
 
 [node name="CorruptedEmeraldTower2" type="Sprite2D" parent="."]
 texture_filter = 1
-position = Vector2(48, 16)
+position = Vector2(56, 16)
 texture = ExtResource("1_bp8li")
 
 [node name="CorruptedEmeraldTower3" type="Sprite2D" parent="."]
 texture_filter = 1
-position = Vector2(80, 48)
+position = Vector2(88, 48)
 texture = ExtResource("1_bp8li")
 
 [node name="CorruptedEmeraldTower5" type="Sprite2D" parent="."]
 texture_filter = 1
-position = Vector2(176, 112)
+position = Vector2(24, 48)
+texture = ExtResource("1_bp8li")
+
+[node name="CorruptedEmeraldTower6" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(24, 80)
 texture = ExtResource("1_bp8li")
 
 [node name="CorruptedEmeraldTower4" type="Sprite2D" parent="."]
 texture_filter = 1
-position = Vector2(48, 48)
+position = Vector2(168, 144)
 texture = ExtResource("1_bp8li")
+
+[node name="CometLaserTurret" type="Sprite2D" parent="."]
+position = Vector2(72, 80)
+texture = ExtResource("2_q40l3")
+
+[node name="HolyTowerS" type="Sprite2D" parent="."]
+position = Vector2(96, 152)
+texture = ExtResource("3_3tnpu")
+
+[node name="HolyTowerS4" type="Sprite2D" parent="."]
+position = Vector2(112, 152)
+texture = ExtResource("3_3tnpu")
+
+[node name="HolyTowerS5" type="Sprite2D" parent="."]
+position = Vector2(128, 152)
+texture = ExtResource("3_3tnpu")
+
+[node name="HolyTowerS6" type="Sprite2D" parent="."]
+position = Vector2(144, 152)
+texture = ExtResource("3_3tnpu")
+
+[node name="UnholyTowerS" type="Sprite2D" parent="."]
+position = Vector2(64, 184)
+texture = ExtResource("4_1urtn")
+
+[node name="UnholyTowerS3" type="Sprite2D" parent="."]
+position = Vector2(80, 184)
+texture = ExtResource("4_1urtn")
+
+[node name="UnholyTowerS4" type="Sprite2D" parent="."]
+position = Vector2(96, 184)
+texture = ExtResource("4_1urtn")
+
+[node name="UnholyTowerS5" type="Sprite2D" parent="."]
+position = Vector2(112, 184)
+texture = ExtResource("4_1urtn")
+
+[node name="UnholyTowerS6" type="Sprite2D" parent="."]
+position = Vector2(128, 184)
+texture = ExtResource("4_1urtn")
+
+[node name="UnholyTowerS7" type="Sprite2D" parent="."]
+position = Vector2(144, 184)
+texture = ExtResource("4_1urtn")
+
+[node name="UnholyTowerS8" type="Sprite2D" parent="."]
+position = Vector2(144, 184)
+texture = ExtResource("4_1urtn")
+
+[node name="King" type="Sprite2D" parent="."]
+position = Vector2(48, 120)
+rotation = -1.5708
+texture = ExtResource("5_7fv5a")
+metadata/_edit_group_ = true
+
+[node name="King2" type="Sprite2D" parent="."]
+position = Vector2(48, 104)
+rotation = -1.5708
+texture = ExtResource("5_7fv5a")
+metadata/_edit_group_ = true
+
+[node name="Portal" type="Sprite2D" parent="."]
+position = Vector2(56, 48)
+texture = ExtResource("6_5bkxo")
+
+[node name="MoreBasicTowerS" type="Sprite2D" parent="."]
+position = Vector2(32, 104)
+texture = ExtResource("8_ecpty")
+
+[node name="MoreBasicTowerS5" type="Sprite2D" parent="."]
+position = Vector2(32, 120)
+texture = ExtResource("8_ecpty")
+
+[node name="MoreBasicTowerS6" type="Sprite2D" parent="."]
+position = Vector2(32, 136)
+texture = ExtResource("8_ecpty")
+
+[node name="MoreBasicTowerS2" type="Sprite2D" parent="."]
+position = Vector2(64, 104)
+texture = ExtResource("8_ecpty")
+
+[node name="MoreBasicTowerS3" type="Sprite2D" parent="."]
+position = Vector2(64, 120)
+texture = ExtResource("8_ecpty")
+
+[node name="MoreBasicTowerS4" type="Sprite2D" parent="."]
+position = Vector2(64, 136)
+texture = ExtResource("8_ecpty")
+
+[node name="UnholyTowerS2" type="Sprite2D" parent="."]
+position = Vector2(32, 152)
+texture = ExtResource("4_1urtn")
+
+[node name="HolyTowerS2" type="Sprite2D" parent="."]
+position = Vector2(64, 152)
+texture = ExtResource("3_3tnpu")
+
+[node name="CheckpointBlue" type="Sprite2D" parent="."]
+position = Vector2(200, 160)
+texture = ExtResource("9_7f5re")
+
+[node name="CometLaserTurret2" type="Sprite2D" parent="."]
+position = Vector2(72, 208)
+texture = ExtResource("2_q40l3")
+
+[node name="CometLaserTurret3" type="Sprite2D" parent="."]
+position = Vector2(104, 208)
+texture = ExtResource("2_q40l3")
+
+[node name="CometLaserTurret4" type="Sprite2D" parent="."]
+position = Vector2(136, 208)
+texture = ExtResource("2_q40l3")
+
+[node name="CometLaserTurret5" type="Sprite2D" parent="."]
+position = Vector2(168, 192)
+texture = ExtResource("2_q40l3")
+
+[node name="CometLaserTurret6" type="Sprite2D" parent="."]
+position = Vector2(200, 192)
+texture = ExtResource("2_q40l3")
+
+[node name="HolyTowerS3" type="Sprite2D" parent="."]
+position = Vector2(80, 152)
+texture = ExtResource("3_3tnpu")
+
+[node name="CheckpointRed" type="Sprite2D" parent="."]
+position = Vector2(40, 176)
+texture = ExtResource("10_ucu1y")
+
+[node name="Nexus" type="Sprite2D" parent="."]
+position = Vector2(168, 112)
+texture = ExtResource("11_ypnnk")
+
+[node name="MrHuge" type="Sprite2D" parent="."]
+position = Vector2(128, 104)
+texture = ExtResource("12_bklrw")
+
+[node name="NukeGlider" type="Sprite2D" parent="."]
+position = Vector2(48, 72)
+texture = ExtResource("13_3hg7s")
+
+[node name="Parasyte" type="Sprite2D" parent="."]
+position = Vector2(48, 88)
+texture = ExtResource("14_n85c6")
+
+[node name="MrBoombastic" type="Sprite2D" parent="."]
+position = Vector2(48, 144)
+texture = ExtResource("15_rhkvs")
+
+[node name="MoreBasicTowerS7" type="Sprite2D" parent="."]
+position = Vector2(224, 152)
+texture = ExtResource("8_ecpty")
+
+[node name="MoreBasicTowerS8" type="Sprite2D" parent="."]
+position = Vector2(224, 136)
+texture = ExtResource("8_ecpty")
+
+[node name="MoreBasicTowerS9" type="Sprite2D" parent="."]
+position = Vector2(208, 136)
+texture = ExtResource("8_ecpty")
+
+[node name="MoreBasicTowerS10" type="Sprite2D" parent="."]
+position = Vector2(208, 120)
+texture = ExtResource("8_ecpty")
+
+[node name="MoreBasicTowerS11" type="Sprite2D" parent="."]
+position = Vector2(208, 104)
+texture = ExtResource("8_ecpty")
+
+[node name="MoreBasicTowerS12" type="Sprite2D" parent="."]
+position = Vector2(192, 104)
+texture = ExtResource("8_ecpty")
