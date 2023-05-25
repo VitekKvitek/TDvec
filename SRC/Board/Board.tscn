@@ -1,4 +1,4 @@
-[gd_scene load_steps=15 format=3 uid="uid://bocsqqnbyivgr"]
+[gd_scene load_steps=16 format=3 uid="uid://bocsqqnbyivgr"]
 
 [ext_resource type="Texture2D" uid="uid://cosne6es4ojek" path="res://Assets/Turrets/Corrupted_emerald_tower.png" id="1_bp8li"]
 [ext_resource type="Texture2D" uid="uid://bofhpeur52fq6" path="res://Assets/Turrets/Comet_laser_turret.png" id="2_q40l3"]
@@ -13,6 +13,7 @@
 [ext_resource type="Texture2D" uid="uid://b0mjvawuv8cvl" path="res://Assets/Units/Mr_huge.png" id="12_bklrw"]
 [ext_resource type="Texture2D" uid="uid://cmwbvxwngsony" path="res://Assets/Units/Nuke_glider.png" id="13_3hg7s"]
 [ext_resource type="Texture2D" uid="uid://jwu4pdjr8nc3" path="res://Assets/Units/Parasyte.png" id="14_n85c6"]
+[ext_resource type="PackedScene" uid="uid://domehwk2y7vly" path="res://SRC/GUI/UserCamera.tscn" id="15_3n5ow"]
 [ext_resource type="Texture2D" uid="uid://c3w62ln2yyvhr" path="res://Assets/Units/Mr_Boombastic.png" id="15_rhkvs"]
 
 [node name="Board" type="Node2D"]
@@ -218,3 +219,6 @@ texture = ExtResource("8_ecpty")
 [node name="MoreBasicTowerS12" type="Sprite2D" parent="."]
 position = Vector2(192, 104)
 texture = ExtResource("8_ecpty")
+
+[node name="UserCamera" parent="." instance=ExtResource("15_3n5ow")]
+position = Vector2(320, 180)
